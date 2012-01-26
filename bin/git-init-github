@@ -7,4 +7,4 @@ if [ -z "$name" ]; then
 fi
 
 git set-origin "git@github.com:davejamesmiller/$name.git"
-git push
+git push --all

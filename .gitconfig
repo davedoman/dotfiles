@@ -2,6 +2,9 @@
     name = Dave Doman
     email = davedoman@alberon.co.uk
 
+[core]
+    excludesfile = ~/.gitignore-global
+
 [color]
     branch = auto
     status = auto

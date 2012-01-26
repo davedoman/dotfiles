@@ -11,4 +11,4 @@ path="git/$name.git"
 
 ssh $server "git init --bare $path"
 git set-origin "$server:$path"
-git push
+git push --all
