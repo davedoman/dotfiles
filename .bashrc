@@ -407,7 +407,7 @@ fi
 
 # Welcome message
 #echo "Welcome back Dave.. ";
-cat .name
+cat ~/.name
 
 # Git Cygwin loads this file *and* .bash_profile so set a flag to tell
 # .bash_profile not to load .bashrc again
