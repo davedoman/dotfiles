@@ -405,6 +405,12 @@ if [ "$TERM" != "dumb" -a -z "$BASH_EXECUTION_STRING" ]; then
     l
 fi
 
+# Welcome message
+echo "
+Welcome back Dave..
+
+  ";
+
 # Git Cygwin loads this file *and* .bash_profile so set a flag to tell
 # .bash_profile not to load .bashrc again
 BASHRC_DONE=1
