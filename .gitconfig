@@ -21,10 +21,12 @@
     addremove = add -A
     amend = commit --amend -C HEAD
     ar = add -A
+    arst = !git add -A && git status
     b = branch
     ba = branch -a
     branches = branch
     ci = commit
+    cm = commit -m 
     co = checkout
     d = diff
     dc = diff --cached
