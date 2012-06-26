@@ -403,11 +403,11 @@ fi
 # But only do this once - gitolite seems to load this file twice!
 if [ "$TERM" != "dumb" -a -z "$BASH_EXECUTION_STRING" ]; then
     l
-fi
 
-# Welcome message
-#echo "Welcome back Dave.. ";
-cat ~/.name
+    # Welcome message
+    #echo "Welcome back Dave.. ";
+    cat ~/.name
+fi
 
 # Git Cygwin loads this file *and* .bash_profile so set a flag to tell
 # .bash_profile not to load .bashrc again
