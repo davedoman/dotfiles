@@ -394,6 +394,12 @@ if [ "$TERM" = "dumb" -a -z "$BASH_EXECUTION_STRING" ]; then
     }
 fi
 
+# Standard config files, nicely split up
+for file in ~/.bash/*; do
+    source "$file"
+done
+
+
 # Custom settings for this machine/account
 if [ -f ~/.bashrc_local ]; then
     source ~/.bashrc_local
