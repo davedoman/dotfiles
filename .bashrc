@@ -387,6 +387,8 @@ if [ "$TERM" != "dumb" -a -z "$BASH_EXECUTION_STRING" ]; then
 
 fi # $TERM != "dumb"
 
+alias cheatsheet='cat ~/.cheatsheet'
+
 # Prevent errors when MSG is set in .bashrc_local
 if [ "$TERM" = "dumb" -a -z "$BASH_EXECUTION_STRING" ]; then
     function MSG {
@@ -394,10 +396,11 @@ if [ "$TERM" = "dumb" -a -z "$BASH_EXECUTION_STRING" ]; then
     }
 fi
 
-# Standard config files, nicely split up
-for file in ~/.bash/*; do
-    source "$file"
-done
+# Standard config files, nicely split up - not in use at the moment
+# as no files in .bash to load in, have not split it up yet.
+#for file in ~/.bash/*; do
+#    source "$file"
+#done
 
 
 # Custom settings for this machine/account
@@ -408,11 +411,9 @@ fi
 # *After* doing the rest, show the current directory contents
 # But only do this once - gitolite seems to load this file twice!
 if [ "$TERM" != "dumb" -a -z "$BASH_EXECUTION_STRING" ]; then
-    l
-
     # Welcome message
-    #echo "Welcome back Dave.. ";
     cat ~/.name
+    l
 fi
 
 # Git Cygwin loads this file *and* .bash_profile so set a flag to tell
